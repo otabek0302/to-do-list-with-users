@@ -1,0 +1,269 @@
+*
+{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+.container
+{
+     width: 1100px;
+     margin: 0 auto;
+     padding: 8px 16px;
+     margin-top: 20px;
+}
+.wrapper
+{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.top
+{
+     width: 100%;
+     height: 200px;
+     background-color: aqua;
+     padding: 16px 32px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+.title
+{
+     font-size: 32px;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: 600;
+     text-transform: uppercase;
+}
+.form
+{
+     width: 100%;
+     height: 200px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+}
+.form div
+{
+     margin-left: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+}
+.form div label {
+     margin-left: 10px;
+     font-size: 16px;
+}
+.inp
+{
+     width: 250px;
+     height: 50px;
+     border: 1px solid #ccc;
+     background-color: #fff;
+     color: #555;
+     border-radius: 10px;
+     padding-left: 10px;
+}
+.inp:checked
+{
+     border-color: blue;
+}
+.btn
+{
+     width: 110px;
+     height: 50px;
+     background-color: blue;
+     color: #fff;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     border: none;
+     margin-left: 20px;
+     border-radius: 10px;
+     margin-top: 20px;
+     letter-spacing: 2px;
+     cursor: pointer;
+}
+
+.bottom
+{
+     width: 100%;
+     height: auto;
+     padding: 16px 32px;
+     margin-top: 20px;
+}
+.list
+{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: column;
+}
+.head_box
+{
+     width: 1000px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+.head_box th 
+{
+     width: 200px;
+     text-align: start;
+}
+.item_box
+{
+     width: 1000px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+.item_box td
+{
+     width: 200px;
+     text-align: start;
+     margin-top: 10px;
+}
+.fullName
+{
+     display: flex;
+}
+.fullName p
+{
+     margin-right: 5px;
+}
+.birthYear
+{
+     padding-left: 25px;
+}
+.action span 
+{
+     margin-right: 5px;
+     cursor: pointer;
+     padding: 5px;
+     border-radius: 5px;
+}
+.edit
+{
+     background-color: rgba(25, 25, 247, .7);
+}
+.remove
+{
+     background-color: rgba(247, 25, 25, 0.7);
+}
+.modal
+{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, .8);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.load_box
+{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, .8);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.modal_form
+{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: aliceblue;
+     width: 500px;
+     height: 500px;
+     border-radius: 20px;
+     position: relative;
+     top: 0;
+     left: 0;
+}
+.modal_form div 
+{
+     margin-bottom: 40px;
+}
+.modal_form div input 
+{
+     color: #000;
+}
+.modal_form .btn
+{
+     width: 170px;
+     font-size: 20px;
+     letter-spacing: 3px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     cursor: pointer;
+}
+.hide
+{
+     opacity: 0;
+     overflow: hidden;
+     z-index: -1;
+}
+.close 
+{
+     position: absolute;
+     top: 10%;
+     right: 10%;
+     font-size: 20px;
+     cursor: pointer;
+}
+
+
+
+
+@keyframes active {
+     0% {
+          opacity: 0.05;
+          overflow: visible;
+          z-index: 1;
+     }
+     25% {
+          opacity: 0.2;
+     }
+
+     50% {
+          opacity: 0.5;
+     }
+     75% {
+          opacity: 0.8;
+     }
+
+     100% {
+          opacity: 1;
+     }
+}
+
+.loader {
+     border: 16px solid #f3f3f3;
+     border-top: 16px solid #3498db;
+     border-radius: 50%;
+     width: 120px;
+     height: 120px;
+     animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     100% {
+          transform: rotate(360deg);
+     }
+}

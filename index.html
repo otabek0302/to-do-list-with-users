@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>List of People</title>
+</head>
+<body>
+     <div class="load_box hide">
+          <div class="loader hide"></div>
+     </div>
+     
+     <div class="container">
+          <div class="wrapper">
+               <div class="top">
+                    <h3 class="title">добавление, изменение и удаление элемента из таблицы</h3>
+                    <form name="add" class="form">
+                         <div class="name">
+                              <label for="Name">Name</label>
+                              <input type="text" class="inp text" name="fullName" placeholder="Otabek Amonov">
+                         </div>
+                        <div class="age">
+                              <label for="Age">Age</label>
+                              <input type="text" class="inp age" name="age" placeholder="20">
+                        </div>
+                         <button type="submit" class="btn">Add</button>
+                    </form>
+               </div>
+               <div class="bottom">
+                    <table class="list">
+                         <thead>
+                              <tr class="head_box">
+                                   <th>No</th>
+                                   <th>Name</th>
+                                   <th>Birthday Year</th>
+                                   <th>Action</th>
+                              </tr>
+                         </thead>
+                         <tbody class="box">
+                         </tbody>
+                    </table>
+               </div>
+          </div>
+     </div>
+     <div class="modal hide">
+          <form name="modal_add" class="modal_form hide">
+               <span class="close">&#10006;</span>
+               <div class="name">
+                    <input type="text" class="inp text" name="name" placeholder="Otabek Amonov">
+               </div>
+               <div class="age">
+                    <input type="text" class="inp birth" name="age" placeholder="20">
+               </div>
+               <button type="submit" class="btn">Add</button>
+          </form>
+     </div>
+     <script src="main.js"></script>
+</body>
+</html>
